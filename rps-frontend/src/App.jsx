@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import SinglePlayer from "./pages/SinglePlayer";
 import CreateRoom from "./pages/CreateRoom";
 import JoinRoom from "./pages/JoinRoom";
-// import MultiPlayer from "./components/MultiPlayer";
+import MultiGamePage from "./pages/MultiGamePage";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Route path="/single-player" element={<SinglePlayer />} />
         <Route path="/create-room" element={<CreateRoom />} />
         <Route path="/join-room" element={<JoinRoom />} />
-        {/* <Route path="/multi-player" element={<MultiPlayer />} /> */}
+        <Route path="/:roomId" element={<MultiGamePage />} />
       </Routes>
     </Router>
   );
