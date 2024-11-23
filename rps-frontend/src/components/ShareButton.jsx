@@ -8,6 +8,7 @@ import {
 } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 
+// eslint-disable-next-line react/prop-types
 const ShareButton = ({ roomId }) => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [linkCopied, setLinkCopied] = useState(false);
@@ -31,7 +32,7 @@ const ShareButton = ({ roomId }) => {
     setShowDropdown(!showDropdown);
   };
 
-  const shareUrl = `http://127.0.0.1:5173/join-room/?roomId=${roomId}`;
+  const shareUrl = `https://rock-paper-scissors-sx38.onrender.com/join-room/?roomId=${roomId}`;
   const shareTitle = `Join my room: ${roomId}`;
 
   const copyLinkTimeout = () => {
