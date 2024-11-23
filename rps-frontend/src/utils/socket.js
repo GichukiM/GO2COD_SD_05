@@ -2,7 +2,7 @@
 import { io } from 'socket.io-client';
 
 // Replace with your backend's URL
-const SERVER_URL = 'http://localhost:8080';
+const SERVER_URL = 'https://rps-backend-4757.onrender.com';
 
 const socket = io(SERVER_URL, {
   autoConnect: true,
