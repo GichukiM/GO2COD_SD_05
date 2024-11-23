@@ -228,13 +228,13 @@ const MultiGame = ({ roomId, playerName, socketId, action, rounds }) => {
         {currentRound > totalRounds && (
           <div className="mt-4 mb-4 flex justify-center gap-4">
             <button
-              onClick={() => (window.location.href = "/create-game")} // Replace with actual navigation logic
+              onClick={() => (window.location.href = "/create-room")} // Replace with actual navigation logic
               className="bg-green-500 text-white py-2 px-6 rounded-full hover:bg-green-600 transition-all"
             >
               Create Game
             </button>
             <button
-              onClick={() => (window.location.href = "/join-game")} // Replace with actual navigation logic
+              onClick={() => (window.location.href = "/join-room")} // Replace with actual navigation logic
               className="bg-blue-500 text-white py-2 px-6 rounded-full hover:bg-blue-600 transition-all"
             >
               Join Game
